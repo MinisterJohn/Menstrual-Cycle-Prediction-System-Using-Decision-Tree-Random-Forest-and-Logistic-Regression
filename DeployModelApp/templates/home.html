@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menstrual Cycle Prediciton System| Home page</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="number"],
+  button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  footer {
+    background-color: black;
+    width: auto;
+    height: 30px;
+  }
+  </style>   
+</head>
+<body>
+  
+ 
+  <h1 style="font-size: 20px; text-align: center; color: green;">MenstrualCyclePred-App</h1>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <h2>Data Form</h2>
+    <form action="{% url 'result' %}">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="estimated_day">Your Estimated Ovulation Day:</label>
+        <br>
+        <input type="number"  name="ovulation_day" required>
+      </div>
+      <div class="form-group">
+        <label for="luteal_phase">Length of Luteal Phase:</label>
+        <br>
+        <input type="number" id="luteal_phase"  required name="length_of_luteal_phase" >
+      </div>
+      <button type="submit" value="Predict"> Predict</button>
+    </form>
+   
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <footer>Menstrual Cycle Prediction system </footer>
+</body>
+</html>
+
+
+
+
