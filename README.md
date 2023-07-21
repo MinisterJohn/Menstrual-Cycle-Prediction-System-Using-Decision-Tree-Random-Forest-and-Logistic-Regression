@@ -216,23 +216,35 @@ Create a file named urls.py in the same folder as the views.py file, and type th
 ## Creating the template files.
 
 Inside the template, we have two files: "home.html" and "result.html". The "home.html" contains the user interface of the web while the "result.html" is the page where the result is been displayed.
-The content of the "home.html" is shown in the figure below:
+The content of the "home.html" can be found in the 'DeployModelApp' folder
 
-Continuation
 
-The content of the "result.html" is shown in the figure below:
+The content of the "result.html" can be found in the 'DeployModelApp' folder. 
 
-Put the code in the URLS of the DeployModel project
+**Put the code in the URLS of the DeployModel project**
 
-Run the project using the following syntax
+![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/8d32174d-5037-4476-980e-5a246fffd409)
+
+
+**Run the project using the following syntax**
+
+![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/5c0cc5ba-f3e6-4bb7-9dbc-0071104395ab)
+
 
 kindly copy the urls and paste it on a web browser. The home page is displayed thus:
 
-To start the prediction
+![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/bad20a4b-3b24-4788-b044-a35f4f818509)
+
+
+**To start the prediction**
+
+
+
 To start the prediction, input the required data: "Ovulation day" and "Length of Luteal Phase" and then click "Predict"
 
 The result will be shown in the "result.html" page which is show below:
+![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/cf2664eb-10f8-492a-b68f-d4c5e444692c)
 
-Congratulations. The model has been successfully deployed
-In [ ]:
+
+
  
