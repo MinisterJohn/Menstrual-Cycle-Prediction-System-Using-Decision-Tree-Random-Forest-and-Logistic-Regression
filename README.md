@@ -27,23 +27,34 @@ In training the model, we used three machine learning algorithm which include: R
   
 **To view five rows out of the dataset**
 - ovulation_dataset.head()
+
 ![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/22c1d6d7-c852-4a82-bb45-a83c70b2a05b)
 
-To determine the shape of the dataset
-The shape of the dataset is used to show the number of rows and columns in the dataset. The function below does that:
-ovulation_dataset.shape
+**To determine the shape of the dataset**
+[The shape of the dataset is used to show the number of rows and columns in the dataset. The function below does that: ]:# 
+- ovulation_dataset.shape
 
-To check if there are missing values
-To check if there are missing values and the sum of the missing values, the function below is used:
-ovulation_dataset.isnull().sum()
+  ![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/60910729-a7fb-4ae2-962e-b14533be4903)
 
-To determine the datatype and the data columns of the dataset
-The datatype and data columns of the dataset is determined using the following function:
-ovulation_dataset.info()
 
-To describe the dataset
-To determine some statistics values of the dataset such as the mean, standard deviation, etc, the function below is used:
-ovulation_dataset.describe()
+**To check if there are missing values**
+[To check if there are missing values and the sum of the missing values, the function below is used: ]:# 
+- ovulation_dataset.isnull().sum()
+
+  ![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/c386ca47-5a82-4759-a688-9f3f1552fe6f)
+
+
+**To determine the datatype and the data columns of the dataset**
+[ The datatype and data columns of the dataset is determined using the following function:]:# 
+- ovulation_dataset.info()
+
+![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/8d75cf0e-803c-4577-8768-337d0f7f954d)
+
+**To describe the dataset**
+[To determine some statistics values of the dataset such as the mean, standard deviation, etc, the function below is used: ]:# 
+- ovulation_dataset.describe()
+
+![image](https://github.com/MinisterJohn/Menstrual-Cycle-Prediction-System-Using-Decision-Tree-Random-Forest-and-Logistic-Regression/assets/94996679/28a76965-1f69-4ec6-ac79-741db50fb869)
 
 Step 5: Splitting the dataset
 After preprocessing the dataset, it was then splitted into features and target set. X represent the features dataset, while Y represent the target dataset. The drop() function used here is used to drop the 'Length of Cycle' from the dataset so as to separate it from the features dataset. It is therefore shown below:
